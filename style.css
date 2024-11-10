@@ -1,0 +1,194 @@
+/* General body font and layout */
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #F9F3D1; /* Soft Buttercream - light and luxurious */
+}
+
+/* Style for the header title */
+header h1 {
+    font-size: 8rem; /* Elegant and bold */
+    color: #D6B28A; /* Light Champagne Gold for a soft yet luxurious look */
+    margin: 0;
+    position: relative;
+    bottom: 300px;
+}
+
+/* Style for the "Tasks" section title */
+#task-list h2 {
+    font-size: 1.8rem;
+    color: #D6B28A; /* Light Champagne Gold for consistency */
+    margin-bottom: 10px;
+}
+
+/* General styles for the task list items */
+#task-list ul li {
+    padding: 12px;
+    border: 1px solid #C0A18E; /* Soft Tan Gold border */
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    background-color: #F1E5D6; /* Light Cream background for soft, refined look */
+    color: #3E4E50; /* Dark Charcoal Gray for text to ensure readability */
+}
+
+/* Style for buttons and input fields */
+button, input, select, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #C0A18E; /* Soft Tan Gold border */
+    background-color: #36454F; /* Light Aqua for a fresh, calming vibe */
+    color: white; /* Dark Charcoal Gray for text */
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Slight transparency for modal overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+#task-form {
+    background: #F9F3D1; /* Soft Buttercream for the form background */
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header inside modal form */
+#task-form h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #D6B28A; /* Light Champagne Gold */
+}
+
+/* Label styling */
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1.1rem;
+    color: #3E4E50; /* Dark Charcoal Gray for readability */
+}
+
+/* Button styles */
+#undo, #redo {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    background-color:#36454F; /* Light Aqua */
+    color : white; /* Dark Charcoal Gray */
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect for the History button */
+#undo:hover, #redo:hover {
+    transform: scale(1.05); /* Slight scale up */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+    background-color: #C0A18E; /* Soft Tan Gold on hover */
+    cursor: pointer;
+}
+
+/* Hover effect for the "Create Task" button */
+#create-task {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    background-color: #36454F; /* Light Aqua */
+    color: white; /* Dark Charcoal Gray */
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    left : 43.5%;
+    bottom: 140px;
+}
+
+#create-task:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #C0A18E; /* Soft Tan Gold on hover */
+    cursor: pointer;
+}
+
+/* Input fields inside the form */
+#task-form input, #task-form textarea, #task-form select {
+    padding: 12px;
+    margin-top: 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #C0A18E; /* Soft Tan Gold border */
+    background-color: #F1E5D6; /* Light Cream background */
+    color: #36454F; /* Dark Charcoal Gray text */
+}
+
+/* Buttons inside the form */
+#task-form button[type="submit"],
+#task-form button[type="button"] {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #C0A18E; /* Soft Tan Gold */
+    color: #3E4E50; /* Dark Charcoal Gray text */
+}
+
+
+
+#back-btn {
+    position: relative;
+    left: 42%;
+}
+
+#back-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #C0A18E; /* Soft Tan Gold */
+    cursor: pointer;
+}
+
+#display-all-tasks-btn {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    background-color: #36454F; /* Light Aqua */
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    
+    
+     
+}
+
+#display-all-tasks-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #C0A18E; /* Soft Tan Gold */
+    cursor: pointer;
+}
