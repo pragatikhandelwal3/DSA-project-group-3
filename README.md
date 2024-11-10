@@ -71,4 +71,5 @@ The application uses a file named tasks.txt to store task data. If the file does
 
 
 #File Handling
+
 The tasks are stored in a file named tasks.txt. Each task is written with a "Task Data" header, followed by the task details such as ID, title, description, deadline, priority, and reminder. Each task entry is separated by a line of dashes for easy reading.
